@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@1&display=swap");
+
+@font-face {
+    font-family: 'Lilita One';
+    src: url('./fonts/LilitaOne-Regular.ttf');
+}
+
 body {
   /* color: rgb(124, 134, 241); - rgb*/
   /* color: rgba(124, 134, 241, alpha) rgb + alpha channel; */
@@ -12,11 +19,17 @@ body {
   font-size: 30px;
   line-height: 2em;
   /*1 em - один розмір батківського шрифта*/
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: lighter;
+  text-align: justify;
 }
 
-h1 {
-  text-align: center;
+h1, h2{
+    text-align: center;
   font-weight: bold;
+  font-family: 'Lilita One';
+  text-transform: uppercase;
+  line-height: 0.7em;
 }
 
 #btn-1 {
@@ -29,7 +42,7 @@ h1 {
 }
 
 a {
-    text-decoration: none;
-    color: black;
-    font-weight:bold; /* дапазон: 100-900*/
+  text-decoration: none;
+  color: pink;
+  font-weight: bold; /* дапазон: 100-900*/
 }
