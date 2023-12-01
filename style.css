@@ -1,10 +1,35 @@
+body {
+  /* color: rgb(124, 134, 241); - rgb*/
+  /* color: rgba(124, 134, 241, alpha) rgb + alpha channel; */
+  /* hex-cpde */
+  /* color: #1b5990; */
+  /* font-size: 200pt; -- typographic punkts */
+  /* px */
+  font-size: 30px;
+}
 
-p {
-    /* color: rgb(124, 134, 241); - rgb*/
-    /* color: rgba(124, 134, 241, alpha) rgb + alpha channel; */
-    /* hex-cpde */
-    color: #1b5990;
-    /* font-size: 200pt; -- typographic punkts */
-    /* px */
-    font-size: 30px;
+.paragraph {
+  font-size: 30px;
+  line-height: 2em;
+  /*1 em - один розмір батківського шрифта*/
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+#btn-1 {
+  text-transform: uppercase;
+  /*capitalize - всі перші літери слів великі*/
+}
+
+#btn-2 {
+  text-transform: lowercase;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight:bold; /* дапазон: 100-900*/
 }
