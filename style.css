@@ -1,20 +1,15 @@
-.image {
-  width: 300px;
-  border: 3px solid orange;
-  box-sizing: border-box;
-  padding: 10px 5px;
-  margin-left: 50px;
+.card-wrapper {
+  border: 1px solid black;
+  width: 500px;
+  height: 350px;
 }
 
-/* width = content + padding + border */
-/* content-sizing - визначення розмірів лише по контенту*/
-/* border-sizing - визначення розмірів по border (включаючи контект, padding та border)*/
-
-div {
-  display: inline;
-  /* за замовчуванням, у div, display - block*/
-}
-
-span {
+img {
   display: block;
+  margin: 0 auto;
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 0px;
 }
