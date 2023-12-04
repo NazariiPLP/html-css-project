@@ -9,3 +9,12 @@
 /* width = content + padding + border */
 /* content-sizing - визначення розмірів лише по контенту*/
 /* border-sizing - визначення розмірів по border (включаючи контект, padding та border)*/
+
+div {
+  display: inline;
+  /* за замовчуванням, у div, display - block*/
+}
+
+span {
+  display: block;
+}
