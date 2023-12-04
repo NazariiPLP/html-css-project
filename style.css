@@ -1,15 +1,33 @@
-.card-wrapper {
-  border: 1px solid black;
-  width: 500px;
-  height: 350px;
-}
-
 img {
-  display: block;
-  margin: 0 auto;
-  border-radius: 100%;
   width: 300px;
   height: 300px;
   object-fit: cover;
-  object-position: 0px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.lama-img {
+  object-position: -70px -2px;
+}
+
+.alpaca-img {
+  object-position: 0px -30px;
+}
+
+.guanaco-img {
+  object-position: 0px 0px;
+}
+
+div {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  margin: 30px;
+  border: 2px dashed orangered;
+}
+
+.div-lama {
+  margin-left: 50px;
 }
