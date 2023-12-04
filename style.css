@@ -1,27 +1,7 @@
-body {
-  color: aquamarine;
-  /*Проте наслідування відбувається від найближчого батьківського елементу*/
+.image {
+  width: 300px;
+  border: 3px solid orange;
+  box-sizing: border-box;
 }
 
-.main-article {
-  font-size: 40px;
-  color: yellowgreen;
-  border: 1px solid red;
-  /* шрифти та кольори наслідуються дочірніми елементами*/
-}
-
-.article-header {
-  color: inherit; /* додаткова вказівка на спадкування властивостей батьківського елементу */
-  color: pink; /* власні правила більш важливі ніж ті, що успадковуються */
-  border: 1px solid red;
-  text-align: center;
-}
-
-.article-link {
-  text-decoration: none;
-  color: inherit; /* додаткова вказівка на спадкування властивостей батьківського елементу*/
-}
-
-.article-content {
-  border: inherit;
-}
+/* width = content + padding + border */
