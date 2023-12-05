@@ -26,3 +26,18 @@ inline-block
 .paige-link:focus {
   border: 3px solid green;
 }
+
+.paige-link:active {
+  background-color: orange;
+  color: black;
+}
+
+input:focus {
+  background-color: aquamarine;
+}
+
+/*
+hower - спрацьовує при наведенні на елемент курсору
+focus - спрацьовує при фокусі на елемент курсором або "TAB"
+active - спрацьовує при натиснені на посилання
+*/
