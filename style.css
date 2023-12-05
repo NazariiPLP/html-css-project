@@ -1,13 +1,24 @@
-div {
-  width: 100px;
-  height: 100px;
-  background-color: bisque;
-  color: magenta;
-  font-size: 40px;
-  text-align: center;
+.link-list li {
+  display: inline-block;
+  margin-top: 30px;
 }
 
-div:hover {
-  background-color: darkorange;
-  color: aquamarine;
+/*
+inline-block 
+- розташовується послідовно в рядку (як в inline елементах)
+- розмір визначається по контенту (як в inline елементах)
+- елемент завжди прямокутний (як в block елементах)
+- працюють властивості width / height (як в block елементах)
+*/
+
+.paige-link {
+  text-decoration: none;
+  background-color: lightblue;
+  padding: 10px;
+  color: orangered;
+}
+
+.paige-link:hover {
+  background-color: blue;
+  color: bisque;
 }
