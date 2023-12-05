@@ -7,17 +7,73 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <article>
-      <div class="square"></div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
-        sint. Dignissimos nihil sint consequatur totam enim aut, aperiam itaque
-        sit at voluptates quasi rem voluptatem laboriosam iusto? Tempora omnis
-        eligendi libero iusto error, laborum suscipit a vel aliquam odio,
-        accusantium modi! Nulla minus libero aliquid dignissimos deleniti
-        pariatur veritatis quibusdam. Lorem, ipsum dolor sit amet consectetur
-        adipisicing elit. Repellendus, itaque.
-      </p>
-    </article>
+    <table>
+      <caption>
+        Taxes
+      </caption>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Week day</th>
+          <th>Taxes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>Monday</td>
+          <td class="text-center">10$</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Tuesday</td>
+          <td class="text-center">15$</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>Wednesday</td>
+          <td class="text-center">9$</td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td>Thursday</td>
+          <td class="text-center">12$</td>
+        </tr>
+        <tr>
+          <td>5.</td>
+          <td>Friday</td>
+          <td class="text-center">12$</td>
+        </tr>
+        <tr>
+          <td rowspan="2">6.</td>
+          <td rowspan="2">Weekend</td>
+          <td class="text-center">35$</td>
+        </tr>
+        <tr>
+          <td>Free for employees</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2">Total:</th>
+          <td>a lot$</td>
+        </tr>
+      </tfoot>
+    </table>
   </body>
 </html>
+
+<!--
+  <table> - тег таблиці
+  <caption> - назва таблиці
+  <thead> - назва стовпців таблиці
+  <tbody> - тіло таблиці 
+  <tfoot> - нижній колонтитул таблиці (семантичний тег)
+  <tr> - рядок таблиці
+  Всередині рядка таблиці створюються комірки (бувають 2-ох типів)
+  <th> - комірка-заголовок (виділяється жирним шрифтом + центрується)
+  <td> - звичайна комірка заголовок 
+    
+    rowspan - атрибут комірки який вказує на скільки рядків має розтягуватися комірка по вертикалі (вниз)
+    colspam - атрибут комірки який вказуж на скільки рядків має розтягуватися комірка по горизонталі (вправо)
+-->
