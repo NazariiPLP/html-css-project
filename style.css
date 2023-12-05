@@ -1,13 +1,13 @@
-table {
-  border: 2px solid black;
-  border-collapse: collapse;
+div {
+  width: 100px;
+  height: 100px;
+  background-color: bisque;
+  color: magenta;
+  font-size: 40px;
+  text-align: center;
 }
 
-th,
-td {
-  border: 1px solid black;
-}
-
-body {
-  font-family: "Times New Roman", Times, serif;
+div:hover {
+  background-color: darkorange;
+  color: aquamarine;
 }
