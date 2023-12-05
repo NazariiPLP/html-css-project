@@ -1,17 +1,8 @@
-table, td, th {
+table, th, td {
   border: 2px solid black;
   border-collapse: collapse;
 }
 
-td, th {
-  border: 1px solid black;
-}
-
-caption {
-  color: red;
-  font-weight: bold;
-}
-
-.text-center {
-  text-align: center;
+body {
+  font-family: 'Times New Roman', Times, serif;
 }
