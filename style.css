@@ -14,37 +14,32 @@
 .inner {
   text-align: center;
   font-size: 40px;
-  width: 100px;
-  height: 100px;
-  position: fixed;
+  width: 80px;
+  height: 80px;
+  background-color: forestgreen;
   border: 1px solid black;
 }
 
 .div1 {
-  background-color: aqua;
-  top: 0;
-  left: 0;
+  position: absolute;
+  top: 200px;
 }
 
 .div2 {
-  background-color: brown;
-  top: 0;
-  right: 0;
+  position: relative;
+  top: 10px;
+  left: 20px;
 }
 
 .div3 {
-  background-color: blue;
-  bottom: 0;
-  left: 0;
+  position: fixed;
 }
 
 .div4 {
-  background-color: darkmagenta;
-  bottom: 0;
-  right: 0;
 }
 
 /*
 relative (відносне позиціонування) - коли ми позиціонуємось відносно місця в нормальному потоці
-fixed (фіксоване позиціонування) - коли ми позиціонуємось відносно вьюпорта
+fixed (фіксоване позиціонування) - коли ми позиціонуємось відносно вьюпорта. Елемент виривається з потоку
+absolute (абсолютне позиціонування) - коли ми позиціонуємось відносно найближчого нестатично позиціонованого родича. Елемент виривається з потоку
 */
