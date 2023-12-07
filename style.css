@@ -1,93 +1,36 @@
-.link-list li {
-  display: inline-block;
-  margin-top: 30px;
+div {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
 }
 
 /*
-inline-block 
-- розташовується послідовно в рядку (як в inline елементах)
-- розмір визначається по контенту (як в inline елементах)
-- елемент завжди прямокутний (як в block елементах)
-- працюють властивості width / height (як в block елементах)
+Завдання: зробити такий колір тла для квадратиків 
+
+1 - червоний
+2 - зелений
+3 - синій
+4 - зелений
+5 - червоний
+6 - синій
+7 - червоний
+8 - зелений
+
+Червоний - 1, 5, 7
+Зелений - 2, 4, 8
+Синій - 3, 6
+
+Правило: не користуватися класами
 */
 
-.paige-link {
-  text-decoration: none;
-  background-color: lightblue;
-  padding: 10px;
-  color: orangered;
+div:nth-child(odd) {
+  background-color: red;
 }
 
-.paige-link:hover {
+div:nth-child(even) {
+  background-color: green;
+}
+
+div:nth-child(3n + 3) {
   background-color: blue;
-  color: bisque;
 }
-
-.paige-link:focus {
-  border: 3px solid green;
-}
-
-.paige-link:active {
-  background-color: orange;
-  color: black;
-}
-
-input:focus {
-  background-color: aquamarine;
-}
-
-li:first-child {
-  color: blue;
-}
-
-li:last-child {
-  color: green;
-}
-
-li:nth-child(odd) {
-  color: orange;
-  background-color: bisque;
-}
-
-li:nth-child(even) {
-  color: orangered;
-  background-color: bisque;
-}
-
-li:nth-child(5) {
-  color: orange;
-  background-color: bisque;
-}
-
-/* Задача: потрібно обрати всі елементи списку після третього (тобто починаючи з 4 елемента) */
-
-li:nth-child(n + 4) {
-  color: brown;
-  background-color: aquamarine;
-}
-
-/* Задача: обрати тільки перші 5 елементів */
-li:nth-child(-n + 5) {
-  color: brown;
-  background-color: aquamarine;
-}
-
-/* Задача: Вибрати кожен 3-ій елемент*/
-/* An + B */
-/* 
-A - які саме числа нас будуть цікавити; 
-B - елемент, з якого ми починаємо
-*/
-li:nth-child(3n + 3) {
-  color: orange;
-  background-color: bisque;
-}
-
-/*
-hower - спрацьовує при наведенні на елемент курсору
-focus - спрацьовує при фокусі на елемент курсором або "TAB"
-active - спрацьовує при натиснені на посилання
-first-child - застосовує правила до першого елемента вкладеного в батківський елементу
-last-child - застосовує правила до останього елемента вкладеного в батківський елементу
-nth-child - застосовує правила до певного елемента за контректим номером, непарних за номером (odd), парних за номером (even)
-*/
