@@ -14,35 +14,37 @@
 .inner {
   text-align: center;
   font-size: 40px;
-  width: 80px;
-  height: 80px;
-  background-color: forestgreen;
+  width: 100px;
+  height: 100px;
+  position: fixed;
   border: 1px solid black;
 }
 
-.div1 { 
-  
+.div1 {
+  background-color: aqua;
+  top: 0;
+  left: 0;
 }
 
 .div2 {
-  position: relative;
-  top: 10px;
-  left: 20px;
+  background-color: brown;
+  top: 0;
+  right: 0;
 }
 
 .div3 {
-  position: fixed;
-  top: 0;
+  background-color: blue;
   bottom: 0;
-  right: 0;
   left: 0;
 }
 
 .div4 {
-
+  background-color: darkmagenta;
+  bottom: 0;
+  right: 0;
 }
 
 /*
-absolute (відносне позиціонування) - коли ми позиціонуємось відносно місця в нормальному потоці
-fixed (фіксоване позиціонування) - коли ми позиціонуємось відносно вьюпорта.
+relative (відносне позиціонування) - коли ми позиціонуємось відносно місця в нормальному потоці
+fixed (фіксоване позиціонування) - коли ми позиціонуємось відносно вьюпорта
 */
