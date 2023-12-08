@@ -1,38 +1,21 @@
 p {
   color: blue;
   font-size: 20px;
-  border: 1px solid black;
   position: relative;
 }
 
+p::first-line {
+line-height: 30px;
+}
+
 p::before {
-  position: absolute;
-  top: 5px;
-  left: 10px;
-  color: red;
-  background-color: pink;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  border-radius: 50%;
-  content: '🤗';
-  display: inline-block;
-  opacity: 0.5;
+  color: violet;
+  content: '＂';
 }
 
 p::after {
-  position: absolute;
-  bottom: 5px;
-  right: 10px;
-  color: red;
-  background-color: pink;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  border-radius: 50%;
-  content: '😎';
-  display: inline-block;
-  opacity: 0.5;
+  color: violet;
+  content: '＂';
 }
 
 /*Unicode - особливі символи*/
