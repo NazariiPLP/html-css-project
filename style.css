@@ -1,11 +1,38 @@
 p {
   color: blue;
-  cursor: crosshair;
+  font-size: 20px;
+  border: 1px solid black;
+  position: relative;
 }
 
-p::selection {
-  color: pink;
-  background-color: blueviolet;
-  cursor: crosshair;
+p::before {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  color: red;
+  background-color: pink;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  content: '🤗';
+  display: inline-block;
+  opacity: 0.5;
 }
 
+p::after {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  color: red;
+  background-color: pink;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  content: '😎';
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/*Unicode - особливі символи*/
