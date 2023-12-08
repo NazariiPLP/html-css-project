@@ -1,14 +1,11 @@
 p {
   color: blue;
+  cursor: crosshair;
 }
 
-p::first-letter {
-  font-size: 20px;
-  color: red;
-  font-style: italic;
+p::selection {
+  color: pink;
+  background-color: blueviolet;
+  cursor: crosshair;
 }
 
-p::first-line {
-  background-color: yellow;
-  color: forestgreen;
-}
