@@ -5,9 +5,11 @@
 }
 
 .container {
+  height: 150px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: flex-end;
   border: 1px solid black;
 }
 
