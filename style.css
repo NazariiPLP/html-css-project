@@ -1,23 +1,21 @@
-/*
-* - множинний селектор
-*/
-
-div * {
-  /* тут можуть бути стилі, вони будуть поширюватися на всіх дочірніх елементів div */
-}
-
-/*
-* - універсальний селектор
-*/
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Проблема: різні базові стилі, які можуть видавати браузери
-1 рішення - універсальне рішення з базовими правилами
-2 рішення - reset.css (обнуляє базові стилі браузеру)
-3 рішення - normalize.css (приводить всі стилі для всіх браузерів до чогось спільного)
-*/
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: 1px solid black;
+}
+
+.item {
+  width: 50px;
+  height: 50px;
+  background-color: teal;
+  color: white;
+  text-align: center;
+  border: 2px solid red;
+}
