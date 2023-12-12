@@ -7,23 +7,25 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <form class="form">
+    <form class="form" action="" method="GET">
       <h2>Sign in</h2>
 
-      <!-- 1 спосіб: id -->
       <label for="email-form">Enter your email</label>
       <input
         type="text"
-        placeholder="Enter your email"
+        placeholder="example@mail.com"
         autofocus
         id="email-form"
+        name="email"
       />
 
-      <!-- 2 спосіб - вкладення input в label -->
-      <label>
-        Enter your password
-        <input type="password" placeholder="Enter your password" />
-      </label>
+      <label for="password-form">Enter your password</label>
+      <input
+        type="password"
+        placeholder="querty123"
+        id="password-form"
+        name="password"
+      />
 
       <button type="submit">Sign in</button>
       <button type="reset">Reset</button>
