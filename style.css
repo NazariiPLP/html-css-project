@@ -44,6 +44,7 @@ vh - 1 vh = 1% виссти вьюпорта
   width: 80%;
   justify-content: space-around;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 h3, span {
