@@ -1,10 +1,14 @@
-.form {
+form {
   display: flex;
   flex-direction: column;
   max-width: 200px;
 }
 
+input {
+  padding: 12px;
+}
+
 button {
- 
-  width: 250px;
+  padding: 12px;
+  width: 230px;
 }

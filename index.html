@@ -7,28 +7,33 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <form class="form" action="" method="GET">
-      <h2>Sign in</h2>
-
-      <label for="email-form">Enter your email</label>
-      <input
-        type="text"
-        placeholder="example@mail.com"
-        autofocus
-        id="email-form"
-        name="email"
-      />
-
-      <label for="password-form">Enter your password</label>
-      <input
-        type="password"
-        placeholder="querty123"
-        id="password-form"
-        name="password"
-      />
-
-      <button type="submit">Sign in</button>
-      <button type="reset">Reset</button>
+    <form action="" class="form">
+      <label class="name-form">
+        Ім'я <input type="text" placeholder="Вадим" autofocus name="name"
+      /></label>
+      <label class="email-form">
+        Електронна пошта
+        <input type="text" placeholder="example@email.com" name="email"
+      /></label>
+      <label class="password-form">
+        Пароль <input type="password" placeholder="querty1234" name="password"
+      /></label>
+      <label class="phone-number-form">
+        Телефон <input type="text" placeholder="0995874135" name="phone-number"
+      /></label>
+      <label class="address-form">
+        Адреса
+        <input
+          type="text"
+          placeholder="вул. Микитинська, буд..."
+          name="address"
+      /></label>
+      <label class="birth-date-form">
+        Дата народження
+        <input type="text" placeholder="14.09.2005" name="birth-date"
+      /></label>
+      <button type="submit">Зареєструватися</button>
+      <button type="reset">Очистити</button>
     </form>
   </body>
 </html>
