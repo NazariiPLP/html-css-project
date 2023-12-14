@@ -4,91 +4,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <form action="" class="form">
-      <label class="user-name-form">
-        Ім'я
-        <input type="text" placeholder="Вадим" autofocus name="user-name"
-      /></label>
-      <label class="email-form required">
-        Електронна пошта
-        <input
-          required
-          type="text"
-          placeholder="example@email.com"
-          name="email"
-          pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
-      /></label>
-      <label class="password-form">
-        Пароль:
-        <input type="password" placeholder="querty1234" name="password"
-      /></label>
-      <label class="phone-number-form">
-        Телефон:
-        <input type="text" placeholder="0995874135" name="phone-number"
-      /></label>
-      <label class="address-form">
-        Адреса:
-        <input
-          type="text"
-          placeholder="вул. Микитинська, буд..."
-          name="address"
-      /></label>
-      <label class="birthdate-form">
-        Дата народження:
-        <input type="date" placeholder="14.09.2005" name="birthdate"
-      /></label>
+    <h1>Форма зворотнього зв'язку</h1>
+    <form>
       <fieldset>
-        <legend>What is yout gender?</legend>
+        <legend>Особисті дані</legend>
         <label>
-          <input type="radio" value="Male" name="gender" checked />
-          Male
+          Ім'я:
+          <input class="text" type="text" name="username"
+        /></label>
+        <label>
+          Електронна пошта:
+          <input class="text" type="text" name="email"
+        /></label>
+        <label>
+          Дата народження:
+          <input class="text" type="date" name="birthdate"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Стать</legend>
+        <label>
+          <input type="radio" value="Male" name="gender" />
+          Чоловік
         </label>
         <label>
-          <input type="radio" value="Female" name="gender" />
-          Female
+          <input type="radio" value="Male" name="gender" />
+          Жінка
         </label>
         <label>
-          <input type="radio" value="Nonbinary" name="gender" />
-          Nonbinary
-        </label>
-        <label>
-          <input type="radio" value="Mechanic" name="gender" checked />
-          Mechanic
+          <input type="radio" value="Male" name="gender" />
+          Інше
         </label>
       </fieldset>
       <fieldset>
-        <legend>Choose your avatar</legend>
-        <input type="file" multiple name="avatar" />
-      </fieldset>
-      <fieldset>
-        <legend>Choose your city</legend>
-        <input type="text" name="city" list="city-list" />
-        <datalist id="city-list">
-          <option value="Kyiv"></option>
-          <option value="Kharkiv"></option>
-          <option value="Lviv"></option>
-          <option value="Dnipro"></option>
-          <option value="Kryvyi Rig"></option>
-        </datalist>
-      </fieldset>
-      <textarea placeholder="Опишіть себе"></textarea>
-      <label class="required">
-        <input required type="checkbox" name="is-agree" checked />
-        Чи Ви погоджуєтесь із нашою політикою?
+        <legend>Додаткові налаштування</legend> 
+        <label class="margin-top">
+        <input type="checkbox" name="is-agree" />
+        Підписатися на розсилку
       </label>
-      <label>
-        <input type="checkbox" name="is-subscribed" checked />
-        Чи хочете ВИ отримувати від нас новини? (спам)
-      </label>
-      <button type="submit">Зареєструватися</button>
-      <button type="reset">Очистити</button>
+      </fieldset>
+      <fieldset>
+        <legend>Оберіть категорію своїх інтересів</legend>
+        <select class="margin-top" name="interests">
+          <optgroup label="Технології">
+            <option value="programming">Прогромування</option>
+            <option value="networks">Мережі</option>
+          </optgroup>
+          <optgroup label="Музика">
+            <option value="rock">Рок</option>
+            <option value="pop">Поп</option>
+          </optgroup>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Як ви дізналися про нас?</legend>
+        <label>
+          <input type="radio" value="search-systems" name="find-out" />
+          Пошукові системи
+        </label>
+        <label>
+          <input type="radio" value="social-networks" name="find-out" />
+          Соціальні мережі
+        </label>
+        <label>
+          <input
+            type="radio"
+            value="advice-from-friends/acquaintances"
+            name="find-out"
+          />
+          Порада друзів/знайомих
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Опишіть свої враження/скарги/пропозиції</legend>
+        <textarea class="margin-top" name="impressions-complaints-suggestions"></textarea>
+      </fieldset>
+      <button type="submit">Надіслати форму</button>
     </form>
   </body>
 </html>
-
-<!-- 
-  Регулярний вираз - шаблон або правило для пошуку та відповідності текстовим рядкам
- -->
