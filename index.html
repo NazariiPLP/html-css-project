@@ -65,17 +65,14 @@
       </fieldset>
       <fieldset>
         <legend>Choose your city</legend>
-        <select name="city">
-          <option value="Kyiv">Київ</option>
-          <option value="Kharkiv">Харків</option>
-          <option value="Lviv">Львів</option>
-          <optgroup label="Дніпопетровська область">
-            <option value="Dnipro">Дніпро</option>
-            <option value="Kryvyi Rig">
-              Кривий Ріг
-            </option>
-          </optgroup>
-        </select>
+        <input type="text" name="city" list="city-list" />
+        <datalist id="city-list">
+          <option value="Kyiv"></option>
+          <option value="Kharkiv"></option>
+          <option value="Lviv"></option>
+          <option value="Dnipro"></option>
+          <option value="Kryvyi Rig"></option>
+        </datalist>
       </fieldset>
       <label class="required">
         <input required type="checkbox" name="is-agree" checked />
