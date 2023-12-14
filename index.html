@@ -14,11 +14,11 @@
       /></label>
       <label class="email-form">
         Електронна пошта
-        <input type="email" placeholder="example@email.com" name="email"
+        <input type="text" placeholder="example@email.com" name="email" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
       /></label>
       <label class="password-form">
         Пароль:
-        <input type="password" placeholder="querty1234" name="password"
+        <input type="password" placeholder="querty1234" name="password" pattern="/(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}/g"
       /></label>
       <label class="phone-number-form">
         Телефон:
@@ -40,3 +40,7 @@
     </form>
   </body>
 </html>
+
+<!-- 
+  Регулярний вираз - шаблон або правило для пошуку та відповідності текстовим рядкам
+ -->
