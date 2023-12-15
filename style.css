@@ -3,7 +3,7 @@
 }
 
 ul {
-  font-size: 24px;
+  font-size: 0px;
 }
 
 li {
@@ -14,7 +14,29 @@ li {
 }
 
 /* 
-1 em - 1 розмір батквського font-size
+1 em - 1 розмір батківського font-size
 1 rem - relative em (root em)
 1 rem = 1 font-size root
 */
+
+/* Задача - прописати медіа-запит для екранів, ширина яких від 300px до 500px */
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  li {
+    display: block;
+    background-color: rgb(71, 199, 107);
+  }
+}
+
+/* 
+max-width - ширина, ДО певної кількості пікселів (включно)
+min-width - ширина, ВІД певної кількості пікселів (включно)
+ */
+
+/* Задача: прописати медіазапит для екранів, ширина яких до 200px */
+
+@media screen and (max-width: 200px) {
+  li {
+    display: block;
+    background-color: blue;
+  }
+}
