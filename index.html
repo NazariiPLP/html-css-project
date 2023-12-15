@@ -19,42 +19,42 @@
         <legend>Особисті дані</legend>
         <label>
           Ім'я:
-          <input class="text" type="text" name="username"
+          <input class="text" type="text" name="username" required
         /></label>
         <label>
           Електронна пошта:
-          <input class="text" type="text" name="email"
+          <input class="text" type="email" name="email" required
         /></label>
         <label>
           Дата народження:
-          <input class="text" type="date" name="birthdate"
+          <input class="text" type="date" name="birthdate" required
         /></label>
       </fieldset>
       <fieldset>
         <legend>Стать</legend>
         <label>
-          <input type="radio" value="Male" name="gender" />
+          <input type="radio" value="male" name="gender" />
           Чоловік
         </label>
         <label>
-          <input type="radio" value="Male" name="gender" />
+          <input type="radio" value="female" name="gender" />
           Жінка
         </label>
         <label>
-          <input type="radio" value="Male" name="gender" />
-          Інше
+          <input type="radio" value="nonbinary" name="gender" />
+          Небінарна особа
         </label>
       </fieldset>
       <fieldset>
-        <legend>Додаткові налаштування</legend> 
+        <legend>Додаткові налаштування</legend>
         <label class="margin-top">
-        <input type="checkbox" name="is-agree" />
-        Підписатися на розсилку
-      </label>
+          <input type="checkbox" name="is-subscribe" value="true"/>
+          Підписатися на розсилку
+        </label>
       </fieldset>
       <fieldset>
         <legend>Оберіть категорію своїх інтересів</legend>
-        <select class="margin-top" name="interests">
+        <select class="margin-top" name="interests-category">
           <optgroup label="Технології">
             <option value="programming">Прогромування</option>
             <option value="networks">Мережі</option>
@@ -78,7 +78,7 @@
         <label>
           <input
             type="radio"
-            value="advice-from-friends/acquaintances"
+            value="friends-acquaintances"
             name="find-out"
           />
           Порада друзів/знайомих
@@ -86,7 +86,10 @@
       </fieldset>
       <fieldset>
         <legend>Опишіть свої враження/скарги/пропозиції</legend>
-        <textarea class="margin-top" name="impressions-complaints-suggestions"></textarea>
+        <textarea
+          class="margin-top"
+          name="impressions-complaints-suggestions"
+        ></textarea>
       </fieldset>
       <button type="submit">Надіслати форму</button>
     </form>
