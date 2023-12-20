@@ -1,42 +1,78 @@
-:root {
-  font-size: 16px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-ul {
-  font-size: 0px;
+.first-screen {
+  background: url(./images/ракушка.jpg);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #926239;
 }
 
-li {
+h1 {
+  font-size: 40px;
+}
+
+div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  color: #926239;
+  border-radius: 10px;
+  border: 1px solid #926239;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+button:hover {
+  color: white;
+  background-color: #926239;
+  cursor: pointer;
+}
+
+p {
+  text-align: center;
+  padding: 15px 10px;
+  line-height: 25px;
+}
+
+.first-screen-text {
+  padding: 0;
+}
+
+.first-paragraph {
+  color: white;
+  background-color: #926239;
+}
+
+.second-paragraph {
+  color: #926239;
+  background-color: white;
+}
+
+.side-parapraph {
   display: inline-block;
-  background-color: rgb(198, 89, 89);
-  padding: 10px;
-  font-size: 2rem;
+  width: 33%;
+  text-align: left;
+  color: white;
+  background-color: #926239;
 }
 
-/* 
-1 em - 1 розмір батківського font-size
-1 rem - relative em (root em)
-1 rem = 1 font-size root
-*/
-
-/* Задача - прописати медіа-запит для екранів, ширина яких від 300px до 500px */
-@media screen and (min-width: 300px) and (max-width: 500px) {
-  li {
-    display: block;
-    background-color: rgb(71, 199, 107);
-  }
-}
-
-/* 
-max-width - ширина, ДО певної кількості пікселів (включно)
-min-width - ширина, ВІД певної кількості пікселів (включно)
- */
-
-/* Задача: прописати медіазапит для екранів, ширина яких до 200px */
-
-@media screen and (max-width: 200px) {
-  li {
-    display: block;
-    background-color: blue;
-  }
+.center-parapraph {
+  display: inline-block;
+  width: 33%;
+  text-align: left;
+  color: #926239;
+  background-color: white;
 }
